@@ -1,10 +1,38 @@
 # OpenAgeFriendly : Data set
-======
+
 Data from the GovernmentOpenData http://data.gov.tw/
 
-The 8 key features in  age-friendly city
+**The 8 key features in  age-friendly city**
 
 ![Image of WHO 8 key features]
 (https://github.com/weitinglin/OpenAgeFriendly/blob/master/doc/WHOguidline.png)
 
-* Dataset
+The data inclusion criteria is according to the WHO age-friendly features and the publication data from the government
+
+* Dataset 1
+  * Poplation Census data
+  * [link](http://data.gov.tw/node/gov/resource/13416)
+
+* Dataset 2
+  * Public Transportation Accessibility
+  * [link](http://data.taichung.gov.tw/wSite/lp?ctNode=230&mp=1&idPath=&xq_xCat=A00&mp=1&idPath=)
+
+* Dataset 3
+  * Medical resource
+  * [link](http://data.taichung.gov.tw/wSite/lp?ctNode=230&mp=1&idPath=&xq_xCat=B00&mp=1&idPath=)
+
+* Dataset 4
+  * Housing Price
+  * [link](http://lvr.land.moi.gov.tw/)
+
+* Dataset 5
+  * Social Participation
+  * [link](http://data.taichung.gov.tw/wSite/lp?ctNode=230&mp=1&idPath=&xq_xCat=G00&mp=1&idPath=)
+
+* Dataset 6
+  * Social Respect and Community Support
+  * [link](http://www.mohw.gov.tw/CHT/DOS/Statistic.aspx?f_list_no=312&fod_list_no=4695)
+
+* Dataset 7
+  * Environment
+  * [link](http://data.taichung.gov.tw/wSite/lp?ctNode=230&mp=1&idPath=&xq_xCat=900&mp=1&idPath=)
