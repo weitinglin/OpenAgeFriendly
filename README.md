@@ -2,16 +2,20 @@
 Using R with Taiwan Government Open Data to create a tool   for monitor the city's age-friendliness status and easily to interact for the local citizen
 
 **Discussion Board on [hackpad](https://dsp.hackpad.com/ivLa4Zookfn)**
+The idea of the project was came out from a team work in [the Winter Data Science Camp] (https://dsp.im/),and the team members were from the different universities and departments working together in order to use the open data to do interesting things for the social good.
 
 **Author**
-- Wen Tsai,Hsu^4
-- Zheng Wan,Lin^2
-- Yu Wen,Kao^5
-- Po Shang,Yang^3
-- Chi Tse,Teng^6
-- Ting Wei,Lin^1
+
+- Ting Wei,Lin
+- Wen Tsai,Hsu
+- Zheng Wan,Lin
+- Yu Wen,Kao
+- Po Shang,Yang
+- Chi Tse,Teng
+
 
 **Affiliation**
+
 1. System Genome and Biology Program, National Taiwan University, Taiwan
 2. Department of Financial and Computational Mathematics,Providence University, Taiwan
 3. Department of Information Management, Providence university, Taiwan
