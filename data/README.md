@@ -29,3 +29,6 @@ Data from the GovernmentOpenData http://data.gov.tw/
 
 * Dataset 7 : **Friendly Environment**
   * [link](http://data.taichung.gov.tw/wSite/lp?ctNode=230&mp=1&idPath=&xq_xCat=900&mp=1&idPath=)
+
+* Dataset 8 : **Taiwan GEO data**
+  * [link](http://data.gov.tw/node/7441)
