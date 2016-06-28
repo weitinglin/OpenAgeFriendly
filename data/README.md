@@ -14,21 +14,21 @@ Data from the GovernmentOpenData http://data.gov.tw/
 
 
 * Equity Measurement
-    :family: Average Family Number
-    :family: Average Family Income
-    :family: Average Family Income SD
+  * :family: Average Family Number
+  * :family: Average Family Income
+  * :family: Average Family Income SD
 * Age-Friendly Environment
   - Physical environment    
-    :house: House Income price ratio
-    :car: Public Transportation Usage Rate
-    :golf: Average Green Space Per Person
+    * :house: House Income price ratio
+    * :car: Public Transportation Usage Rate
+    * :golf: Average Green Space Per Person
   - Social environment
-    :ambulance: Average Family Spending on Healthcare
-    :performing_arts: Average Family Spending on Leisure Activities
-    :iphone: Average Family Spending on the IT and communication
-    :hearts: Number of doctors per 100000 people
+    * :ambulance: Average Family Spending on Healthcare
+    * :performing_arts: Average Family Spending on Leisure Activities
+    * :iphone: Average Family Spending on the IT and communication
+    * :hearts: Number of doctors per 100000 people
 * Quality of life : in order to assessment the temporary status
-    :feelsgood: Best Retired Place rated by the elder
+    * :feelsgood: Best Retired Place rated by the elder
 
 * Dataset 1 : [Population Census data](http://data.gov.tw/node/gov/resource/13416)
 
