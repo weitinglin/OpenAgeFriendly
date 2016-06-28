@@ -9,7 +9,7 @@ Data from the GovernmentOpenData http://data.gov.tw/
 
 **The data inclusion criteria is according to the WHO age-friendly features and the publication data from the government**
 
-[Index structure]!(https://github.com/weitinglin/OpenAgeFriendly/blob/master/doc/index_structure.png)
+![Index structure](https://github.com/weitinglin/OpenAgeFriendly/blob/master/doc/index_structure.png)
 
 
 
