@@ -30,4 +30,7 @@ According to WHO 2015 age-friendly city guidelines, there are eight aspects for 
 ![Heatmap of the indexes for seperate county and city]
 (https://github.com/weitinglin/OpenAgeFriendly/blob/master/figs/4coreindicators.png)
 
-![Equity](https://github.com/weitinglin/OpenAgeFriendly/blob/master/figs/Equity1000.png) ![Physical nvironemnt](https://github.com/weitinglin/OpenAgeFriendly/blob/master/figs/PhysicalEnvironment1000.png) ![Quality of life](https://github.com/weitinglin/OpenAgeFriendly/blob/master/figs/QualityOfLife1000.png) ![Social Environment]!(https://github.com/weitinglin/OpenAgeFriendly/blob/master/figs/SocialEnvironment1000.png)
+![Equity](https://github.com/weitinglin/OpenAgeFriendly/blob/master/figs/Equity1000.png)
+![Physical nvironemnt](https://github.com/weitinglin/OpenAgeFriendly/blob/master/figs/PhysicalEnvironment1000.png)
+![Quality of life](https://github.com/weitinglin/OpenAgeFriendly/blob/master/figs/QualityOfLife1000.png)
+![Social Environment](https://github.com/weitinglin/OpenAgeFriendly/blob/master/figs/SocialEnvironment1000.png)
