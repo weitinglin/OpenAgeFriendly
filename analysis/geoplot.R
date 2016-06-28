@@ -1,5 +1,8 @@
+#====================================================================
 #shaping the the geodata, implemented the geography with the transformation data
 #====================================================================
+#load the package
+
 library(maptools)
 library(rgdal)
 library(tidyr)
@@ -8,16 +11,22 @@ library(broom)
 library(plotly)
 
 #====================================================================
-#make a beautiful plot
+#input the geopdata and subset certain cities
+#====================================================================
+
 data.path <- file.path("/Users/Weitinglin/Documents/R_scripts/OpenAgePractice/data/geodata",
                        file = "County_MOI_1041215.shp")
 y <- readOGR(dsn=data.path,layer = "County_MOI_1041215")
 
 
-#subset: to remove the small island area
+#subset: to remove the small island area outside the Taiwan
+
 y <- y[(y$C_Name != "連江縣" & y$C_Name != "金門縣" & y$C_Name != "澎湖縣"),]
 
 #====================================================================
+#transform the data structure into data.frame
+#====================================================================
+
 y    <- fortify(y, region = "C_Name")
 
 
@@ -29,8 +38,11 @@ Basic <- y %>%
 #font family problem
 thm <- function() theme(text=element_text(size=24, lineheight = 10, family="STHeiti", colour ="Black"))
 
-
+#====================================================================
 #clean the island region
+#extract the certain city out and work seperately
+#====================================================================
+
 y.sub <- y%>% filter(group %in% c("嘉義市.1"))
 y <- y%>% filter(group %in% c("高雄市.1","花蓮縣.1","基隆市.1","嘉義縣.1",
                               "苗栗縣.1","南投縣.1","屏東縣.1","臺北市.1","臺東縣.1",
@@ -44,12 +56,15 @@ Basic <- Basic %>% filter( group %in% c("高雄市.1","花蓮縣.1","基隆市.1
 
 
 #smooth the boundary of the county and city
+
 y %>% group_by(group) %>% summarize(n = n())
 y <- y[seq(from = 1, to = 214997, by = 3 ),]
 y <- y[seq(from = 1, to = 71666, by = 3 ),]
 y <- y[seq(from = 1, to = 23889, by = 2 ),]
 y <- y[seq(from = 1, to = 11945, by = 2 ),]
 y <- y[seq(from = 1, to = 5973, by = 2 ),]
+
+#test the result of the smooth
 ggplot(data = y, aes(x = long, y = lat))+
   geom_polygon(colour = "black", size = 0.5, aes(group = group))+
   geom_text(data = Basic, aes(label = Basic$group,x = Basic$long,y=Basic$lat)) +
@@ -72,8 +87,11 @@ Basic$group  <- gsub("\\.1","",Basic$group)
 Basic <- left_join(Basic,name_trans,by = "group")
 colnames(Basic) <- c("name_ch","long","lat","order","group")
 
+#====================================================================
 #shift the text position to avoid interrupt
 #(120.5934,23.91997)
+#====================================================================
+
 Basic[Basic$group == "Changhua County",]$long <- 120.4734
 Basic[Basic$group == "Changhua County",]$lat  <- 24
 #(120.5244,23.45374)
@@ -113,6 +131,7 @@ Basic[Basic$group == "Yilan County",]$lat  <- 22.95784
 #==========================================
 #To test the text place
 #==========================================
+
 #ggplot(data = data_combine, aes(x = long, y = lat))+
 #  geom_polygon(colour = "lightblue", size = 0.5, aes(group = id, fill = quality_of_life))+
 #  geom_text(data = Basic, aes(label = Basic$group,x = Basic$long,y=Basic$lat)) +
@@ -130,6 +149,7 @@ Basic[Basic$group == "Yilan County",]$lat  <- 22.95784
 #       load new library: ggmap
 #       to load the map as the layer for polygon
 ===========================================
+
 library(ggmap)
 #define the boundary of the map
 myLocation <- c(120,21.91,122,25.3)

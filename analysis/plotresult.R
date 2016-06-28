@@ -1,6 +1,7 @@
-#Plot the result
-#index plotting for 4 indexes
 #====================================================================
+#Plot the result geographically and the heatmap reflexing the each cities status
+#====================================================================
+
 localdata <- integratData %>% filter(name_ch =="嘉義市")
 name_trans <- data[,c(1,2)][20,]
 colnames(name_trans) <- c("name_ch","name_en")
@@ -11,7 +12,9 @@ y.sub$AgeFriendlyPhysical  <- localdata$age_friendly_physical_env
 y.sub$AgeFriendlySocial    <- localdata$age_friednly_social_env
 y.sub$QualityOfLife        <- localdata$quality_of_life
 
-
+#====================================================================
+# extract the data out preparing for the indexes value
+#====================================================================
 local_equity <- geom_polygon(data = y.sub, colour = "lightgrey", size = 0.5, aes(x =long,y =lat,group = group, fill = Equity))
 local_social <- geom_polygon(data = y.sub, colour = "lightgrey", size = 0.5, aes(x =long,y =lat,group = group, fill = AgeFriendlySocial))
 local_physical <- geom_polygon(data = y.sub, colour = "lightgrey", size = 0.5, aes(x =long,y =lat,group = group, fill = AgeFriendlyPhysical))
@@ -50,8 +53,11 @@ ggmap(myMap3)+
   thm()+labs(title = "AgeFriendlyCity: Quality of life",x="",y="")+scale_fill_gradient(low ="red", high = "green")+
   local_quality
 
+#====================================================================
 #Total Heat Map======================================================
-#data reshape
+#data reshape to fit the ggplot2
+#====================================================================
+
 
 name_trans <- data[,c(1,2)]
 colnames(name_trans) <- c("name_ch","name_en")
