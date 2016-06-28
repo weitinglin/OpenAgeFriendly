@@ -9,6 +9,11 @@ Data from the GovernmentOpenData http://data.gov.tw/
 
 **The data inclusion criteria is according to the WHO age-friendly features and the publication data from the government**
 
+[Index structure]!(https://github.com/weitinglin/OpenAgeFriendly/blob/master/doc/index_structure.png)
+
+
+
+
 * Dataset 1 : [Population Census data](http://data.gov.tw/node/gov/resource/13416)
 
 * Dataset 2 : [Public Transportation Accessibility](http://data.taichung.gov.tw/wSite/lp?ctNode=230&mp=1&idPath=&xq_xCat=A00&mp=1&idPath=)
